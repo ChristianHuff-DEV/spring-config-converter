@@ -1,5 +1,10 @@
 package com.example.springconfigconverter;
 
-public class CustomFieldNumber extends CustomField{
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class CustomFieldNumber extends CustomField {
   private int decimalDigits;
 }
