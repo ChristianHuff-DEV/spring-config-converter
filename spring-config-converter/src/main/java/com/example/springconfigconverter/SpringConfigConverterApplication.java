@@ -17,7 +17,9 @@ public class SpringConfigConverterApplication {
   @Bean
   CommandLineRunner printConfig(CustomConfig customConfig, CustomFieldConverter customFieldConverter) {
     return args -> {
-      customConfig.getAccount().getCustomFields().forEach((key, value) -> System.out.println(key + ": " + value.getClass().getSimpleName()));
+      customConfig.getAccount().getCustomFields().forEach((key, value) -> {
+        System.out.println(key + ": " + value.getClass().getSimpleName());
+      });
     };
   }
 
