@@ -1,3 +1,18 @@
 spring:
   application:
     name: spring-config-converter
+org.example:
+  account:
+    customFields:
+      booleanTest:
+        type: boolean
+        i18nKey: "org.example.customField.boolean"
+      stringTest:
+        type: string
+        i18nKey: "org.example.customField.string"
+        minLenght: 1
+        maxLenght: 3
+      numberTest:
+        type: number
+        i18nKey: "org.example.customField.number"
+        decimalDigits: 2
